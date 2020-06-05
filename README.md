@@ -1,4 +1,4 @@
-<h1>fuck me !</h1>
+<h1>Welcome</h1>
 <p>Hi! I'm the one who owns this page, welcome to my page where you can see something really nice!
 </p>
 
