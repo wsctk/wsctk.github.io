@@ -1,2 +1,2 @@
 baseurl: /
-permslink: /:categories/:month/:day/:title.html
+permalink: /:categories/:month/:day/:title.html
