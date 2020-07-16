@@ -21,6 +21,10 @@ body{
 .content {
     background-color: #eef;
 }
+.secondTitle {
+    font-weight: bold;
+    font-size:20px;
+}
 .footer {
     background-color: #e8e7e3;
     width:100%;
