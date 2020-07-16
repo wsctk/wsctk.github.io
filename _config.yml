@@ -1,1 +1,5 @@
 baseurl: /
+webrick:
+  headers:
+    My-header: ceshitou 
+    My-Other-Header: ceshitou2
