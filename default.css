@@ -18,7 +18,7 @@ body{
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     line-height: 100px;
-    padding-bottom:30px;
+    margin-bottom:30px;
     box-shadow: 0 5px 5px #999;
 }
 .content {
