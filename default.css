@@ -8,17 +8,18 @@ body{
     background-color: #eee;
 }
 .header {
+    float:left;
     text-align: center;
-    background-color: #aaa;
+    background-color: #8c1515;
     width:100%;
-    height:150px;
+    height:100px;
     font-size: 36px;
     font-weight: bold;
     border-radius: 30px;
     line-height: 150px;
 }
 .content {
-    
+
 }
 .footer {}
 .writeByWho {}
