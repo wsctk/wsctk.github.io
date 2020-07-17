@@ -10,6 +10,8 @@ window.onload = function() {
         d.style.left = left + 'px';
         d.style.top = top + 'px';
         body.appendChild(d);
-        console.log(d);
-})
+        setTimeout(function(){
+            body.removeChild(d);
+        },3200)
+    })
 }
