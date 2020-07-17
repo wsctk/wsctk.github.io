@@ -28,6 +28,8 @@ body{
 .secondTitle {
     font-weight: bold;
     font-size:20px;
+    display: block;
+    margin-left:40px;
 }
 .footer {
     background-color: #e8e7e3;
