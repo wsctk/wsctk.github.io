@@ -69,11 +69,11 @@ li {
 }
 @keyframes sploosh {
     0% {
-        box-shadow: 0 0 0 rgba(66,166,223,0.7);
+        box-shadow: 0 0 300px rgb(255, 0, 0);
         background:rgba(66,166,223,0.7);
     }
     100% {
-        box-shadow: 0 0 300px rgba(66,166,223,0);
+        box-shadow: 0 0 300px rgba(66,166,223, 0);
         background:rgba(66,166,223,0);
     }
 }
