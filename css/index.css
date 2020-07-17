@@ -8,6 +8,7 @@ body {
     background-color: #eee;
     min-width: 800px;
     font-family: Arial,'Times New Roman', KaiTi;
+    height:100%;
 }
 .header {
     text-align: center;

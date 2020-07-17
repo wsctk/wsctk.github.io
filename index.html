@@ -12,9 +12,4 @@ title: CTK's WEBSITE
             <li>{{post.date | date_to_string}}&nbsp;<a href="{{post.url}}">{{post.title}}</a></li>
         {% endfor %}
     </ul>
-    <ul>
-        {% for article in site.articles %}
-            <li>{{article.date | date_to_string}}&nbsp;<a href="{{article.url}}">{{article.title}}</a></li>
-        {% endfor %}
-    </ul>
 </div>
