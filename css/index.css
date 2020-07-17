@@ -58,3 +58,13 @@ li {
     margin-left: 20px;
     margin-bottom: 12px;
 }
+@keyframes sploosh {
+    0% {
+        box-shadow: 0, 0, 0, 0, rgba(66,166,223,0.7);
+        background:rgba(66,166,223,0.7);
+    }
+    100% {
+        box-shadow: 0, 0, 300px, 0, rgba(66,166,223,0.7);
+        background:rgba(66,166,223,0);
+    }
+}
