@@ -9,6 +9,7 @@ body{
     background-color: #eee;
     min-width: 800px;
     font-family: Helvetica, Arial, KaiTi;
+    overflow:hidden;
 }
 .header {
     text-align: center;
