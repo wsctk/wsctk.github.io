@@ -9,7 +9,7 @@ window.onload = function() {
             background:"transparent",
             animation: "sploosh 3s cubic-bezier(0.165, 0.85, 0.44, 1)"
         }
-        const top = this.clientY;
+        const top = window.clientY;
         const left = this.clientX;
         console.log(top);
     }
