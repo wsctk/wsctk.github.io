@@ -5,8 +5,8 @@ title: CTK's WEBSITE
 <div class="header">
     Welcome to my tool-use-article web!
 </div>
-<p class="title">目录</p>
 <div class="articleTitle">
+    <p class="title">目录</p>
     <ul>
         {% for post in site.posts %}
             <li>{{post.date | date_to_string}}&nbsp;<a href="{{post.url}}">{{post.title}}</a></li>
