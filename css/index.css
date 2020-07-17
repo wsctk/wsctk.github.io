@@ -60,8 +60,8 @@ li {
     margin-bottom: 12px;
 }
 .dot{
-    width: 2px;
-    height: 2px;
+    width: 20px;
+    height: 20px;
     border-radius: 100%;
     position: absolute;
     background:transparent;
