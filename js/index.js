@@ -10,7 +10,7 @@ window.onload = function() {
     // }
     const body = document.querySelector("body");
     console.log(body);
-    body.addEventListener("onclick", function(event){
+    body.addEventListener("click", function(event){
         const top = event.clientY;
         const left = event.clientX;
         console.log(top);
