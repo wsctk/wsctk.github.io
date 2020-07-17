@@ -3,7 +3,7 @@
     padding:0;
     user-select: none;
 }
-html body .container{
+html, body, .container{
     height:100%;
 }
 body {
