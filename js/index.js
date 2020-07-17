@@ -5,6 +5,11 @@ window.onload = function() {
     body.addEventListener("click", function(event) {
         const top = event.clientY;
         const left = event.clientX;
-        body.appendChild('<div class="dot" style="top:' + top + 'px;left:' + left + 'px;"></div>')
+        const dot = document.createElement('div');
+        dot.className = dot;
+        dot.style.left = left + 'px';
+        dot.style.top = top + 'px';
+        body.appendChild(dot);
+        console.log(dot);
 })
 }
