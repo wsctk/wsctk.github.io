@@ -24,8 +24,7 @@ body{
     box-shadow: 0 5px 5px #999;
 }
 .content {
-    padding-top:30px;
-    padding-bottom:30px;
+    padding: 30px 50px 30px 50px;
     background-color: #eef;
     box-shadow: 0px 0px 9px #777;
     margin-bottom: 40px;
@@ -36,16 +35,16 @@ p {
 .firstTitle {
     font-weight: bold;
     font-size: 30px;
-    margin-left:30px;
+    /* margin-left:30px; */
     margin-bottom: 30px;
 }
 .secondTitle {
     font-size:24px;
-    margin-left:40px;
+    /* margin-left:40px; */
     margin-bottom: 20px;
 }
 .textline {
-    margin-left:50px;
+    /* margin-left:50px; */
     margin-bottom:12px;
     font-size: 20px;
 }
