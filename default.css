@@ -7,7 +7,7 @@ body{
     padding: 0 280px 0 280px;
     background-color: #eee;
     min-width: 800px;
-    font-family: KaiTi;
+    font-family: Arial,'Times New Roman', KaiTi;
 }
 .header {
     text-align: center;
@@ -49,19 +49,11 @@ p {
     margin-bottom:12px;
     font-size: 20px;
 }
-.footer {
-    background-color: #e8e7e3;
-    height:70px;
-    position: fixed;
-    bottom: 0;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
 .writeByWho {
+    position: fixed;
     width:240px;
     height:40px;
     line-height: 40px;
-    position: absolute;
     bottom:0;
     right:0;
 }
