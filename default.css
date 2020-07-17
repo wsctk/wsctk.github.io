@@ -40,6 +40,11 @@ p {
     margin-left:40px;
     margin-bottom: 20px;
 }
+.textline {
+    margin-left:30px;
+    letter-spacing: 2px;
+    margin-bottom:12px;
+}
 .footer {
     background-color: #e8e7e3;
     width:100%;
