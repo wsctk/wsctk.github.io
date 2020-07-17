@@ -3,12 +3,14 @@
     padding:0;
     user-select: none;
 }
+html body {
+    height:100%;
+}
 body {
     font-size:16px;
     padding: 0 280px 0 280px;
     background-color: #eee;
     min-width: 800px;
-    height:100%;
     font-family: Helvetica, Arial, KaiTi;
 }
 p {
