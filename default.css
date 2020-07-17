@@ -28,7 +28,7 @@ body{
     padding-bottom:30px;
     background-color: #eef;
     box-shadow: 0px 0px 9px #777;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 p {
     display:block;
@@ -57,5 +57,5 @@ p {
     line-height: 30px;
     bottom:0;
     right:285px;
-    background-color: #eff;
+    background-color: rgb(243, 226, 226);
 }
