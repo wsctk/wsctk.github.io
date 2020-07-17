@@ -3,8 +3,8 @@ window.onload = function() {
     const body = document.querySelector("body");
     console.log(body);
     body.addEventListener("click", function(event) {
-        const top = event.clientY;
-        const left = event.clientX;
+        const top = event.pageY;
+        const left = event.pageX;
         const d = document.createElement('div');
         d.className = "dot";
         d.style.left = left + 'px';
