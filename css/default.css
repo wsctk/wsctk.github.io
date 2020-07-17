@@ -62,3 +62,21 @@ p {
     background-color: rgba(243, 226, 226, 0.5);
     border-radius: 5px;
 }
+.dot{
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+    position: absolute;
+    background:transparent;
+    animation: sploosh 3s cubic-bezier(0.165, 0.85, 0.44, 1);
+}
+@keyframes sploosh {
+    0% {
+        transform: scale(1);
+        background:rgba(66,166,223,0.7);
+    }
+    100% {
+        transform: scale(100);
+        background:rgba(66,166,223,0);
+    }
+}
