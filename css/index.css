@@ -7,8 +7,22 @@ body {
     padding: 0 280px 0 280px;
     background-color: #eee;
     min-width: 800px;
-    font-family: Arial,'Times New Roman', KaiTi;
+    font-family: Helvetica, Arial, KaiTi;
     height:100%;
+}
+p {
+    display:block;
+}
+a {
+    text-decoration: none;
+    color: #2a7ae2;
+}
+a:hover {
+    color:#000;
+    text-decoration: underline;
+}
+a:visited {
+    color: #205caa;
 }
 .header {
     text-align: center;
@@ -23,9 +37,6 @@ body {
     line-height: 100px;
     margin-bottom:30px;
     box-shadow: 0 5px 5px #999;
-}
-p {
-    display:block;
 }
 .title{
     font-size:34px;
