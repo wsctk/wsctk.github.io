@@ -53,8 +53,9 @@ p {
 .writeByWho {
     position: fixed;
     width:240px;
-    height:40px;
-    line-height: 40px;
+    height:30px;
+    line-height: 30px;
     bottom:0;
     right:285px;
+    background-color: #eff;
 }
