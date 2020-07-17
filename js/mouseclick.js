@@ -2,7 +2,7 @@ window.onload = function() {
     document.append()
     const body = document.querySelector("body");
     console.log(body);
-    body.addEventListener("click", function(event) {
+    body.addEventListener("clickdown", function(event) {
         const top = event.pageY;
         const left = event.pageX;
         const d = document.createElement('div');
