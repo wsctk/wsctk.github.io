@@ -23,6 +23,15 @@ body {
     margin-bottom:30px;
     box-shadow: 0 5px 5px #999;
 }
+p {
+    display:block;
+}
+.title{
+    font-size:24px;
+    height:100px;
+    width:100%;
+    text-align: center;
+}
 .articleTitle {
     font-size: 24px;
     padding-top:30px;
