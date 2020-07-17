@@ -26,6 +26,7 @@ body{
 .content {
     padding-top:30px;
     background-color: #eef;
+    box-shadow: 0 5px 5px #777;
 }
 p {
     display:block;
