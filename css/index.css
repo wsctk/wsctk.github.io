@@ -69,7 +69,6 @@ li {
     position: absolute;
     background:transparent;
     animation: sploosh 3s cubic-bezier(0.165, 0.85, 0.44, 1);
-    float:left;
 }
 @keyframes sploosh {
     0% {
