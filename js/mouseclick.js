@@ -1,11 +1,8 @@
 window.onload = function() {
-    document.append()
     const body = document.querySelector("body");
-    console.log(body);
-    body.addEventListener("click", function(event) {
+    window.addEventListener("click", function(event) {
         const top = event.pageY;
         const left = event.pageX;
-        console.log(top);
         const d = document.createElement('div');
         d.className = "dot";
         d.style.left = left + 'px';
