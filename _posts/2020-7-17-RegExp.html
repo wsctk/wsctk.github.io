@@ -9,13 +9,18 @@ title: 正则方法
     <P class="firstTitle">正则方法</p>
     
     <P class="secondTitle">正则表达式方法</P>
-    <p class="textline">改变和重新编译正则表达式：compile（）</p>
-    <p class="textline">返回检索到的正则表达式内容：RegExc.exec（String）</p>
-    <p class="textline">检测字符串是否包含正则表达式的内容：RegExc.test（String）</p>
+    <p class="textline">改变和重新编译正则表达式：compile()</p>
+    <p class="textline">返回检索到的正则表达式内容：RegExc.exec(String)</p>
+    <p class="textline">检测字符串是否包含正则表达式的内容：RegExc.test(String)</p>
 
     <P class="secondTitle">修饰符</P>
-    <p class="textline">不分大小写：I</p>
+    <p class="textline">不分大小写：i</p>
     <p class="textline">查找所有匹配：g</p>
+    <p class="textline">es6新增</p>
+    <p class="textline">查找所有匹配,匹配必须从剩余的第一个位置开始：y</p>
+    <p class="textline">使'.'可以匹配任意单个字符：s</p>
+
+
 
     <P class="secondTitle">方括号</P>
     <p class="textline">查找指定范围的字符：[abc]</p>
@@ -23,7 +28,7 @@ title: 正则方法
 
     <P class="secondTitle">元字符</P>
     <p class="textline">除了换行和行结束符的任一字符：.</p>
-    <p class="textline">单词（数字，字母，下划线）字符：\w</p>
+    <p class="textline">单词(数字，字母，下划线)字符：\w</p>
     <p class="textline">非单词字符：\W</p>
     <p class="textline">数字字符：\d</p>
     <p class="textline">非数字字符：\D</p>
@@ -31,7 +36,7 @@ title: 正则方法
     <p class="textline">非空白字符：\S</p>
     <p class="textline">匹配单词边界：\b</p>
     <p class="textline">匹配非单词边界：\B</p>
-    <p class="textline">查找NUL字符（暂时不明是啥）：\0</p>
+    <p class="textline">查找NUL(null)字符：\0</p>
     <p class="textline">换页符：\f</p>
     <p class="textline">回车符：\r</p>
     <p class="textline">制表符：\t</p>
@@ -52,11 +57,9 @@ title: 正则方法
     <p class="textline">匹配其后没有紧接字符串n的字符串：RegExc(?!=n)</p>
     <p class="textline"></p>
     <p class="textline"></p>
-    <p class="textline"></p>
-    <p class="textline"></p>
-    <p class="textline"></p>
-    <p class="textline"></p>
-    <p class="textline"></p>
+    
+   
+   
 
     <div class="writeByWho">Writed By CTK at {{page.date | date_to_string}}</div>
 </div>
