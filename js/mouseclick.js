@@ -2,12 +2,10 @@ window.onload = function() {
     const body = document.querySelector("body");
     const winheight = body.scrollHeight
     const winwidth = body.scrollWidth
-    console.log(winheight)
     const di = document.createElement('div');
     di.className = "gezhaoceng";
     di.style.width = winwidth + 'px'
     di.style.height = winheight + 'px'
-    console.log(di.height)
     body.appendChild(di)
     window.addEventListener("click", function(event) {
         const top = event.pageY;
