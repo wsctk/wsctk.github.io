@@ -6,6 +6,7 @@ window.onload = function() {
     di.className = "gezhaoceng";
     di.innerWidth = winwidth
     di.innerHeight = winheight
+    console.log(di.innerHeight)
     body.appendChild(di)
     window.addEventListener("click", function(event) {
         const top = event.pageY;
