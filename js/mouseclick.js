@@ -1,7 +1,7 @@
 window.onload = function() {
     const body = document.querySelector("body");
     window.addEventListener("click", function(event) {
-        const abc = window.pageX
+        const abc = document.pageX
         console.log(abc)
         const top = event.pageY;
         const left = event.pageX;
