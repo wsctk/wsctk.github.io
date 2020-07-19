@@ -1,7 +1,7 @@
 window.onload = function() {
     const body = document.querySelector("body");
     window.addEventListener("click", function(event) {
-        const abc = document.pageX
+        const abc = window.innerHeight
         console.log(abc)
         const top = event.pageY;
         const left = event.pageX;
