@@ -69,6 +69,7 @@ li {
     left: 0;
     background: transparent;
     overflow:hidden;
+    z-index: -1;
 }
 .dot{
     width: 2px;
