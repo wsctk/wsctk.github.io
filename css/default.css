@@ -67,6 +67,14 @@ p {
     background-color: rgba(243, 226, 226, 0.5);
     border-radius: 5px;
 }
+.gezhaoceng {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    overflow:hidden;
+    z-index: -1;
+}
 .dot{
     width: 2px;
     height: 2px;
