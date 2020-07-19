@@ -1,7 +1,8 @@
 window.onload = function() {
     const body = document.querySelector("body");
-    const winheight = window.innerHeight
-    const winwidth = window.innerWidth
+    const winheight = body.innerHeight
+    const winwidth = body.innerWidth
+    console.log(winheight)
     const di = document.createElement('div');
     di.className = "gezhaoceng";
     di.style.width = winwidth + 'px'
