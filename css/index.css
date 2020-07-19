@@ -29,7 +29,6 @@ a:visited {
 }
 ul {
     list-style: none;
-    z-index:10;
 }
 li {
     margin-left: 20px;
@@ -70,6 +69,7 @@ li {
     left: 0;
     background: transparent;
     overflow:hidden;
+    z-index:10;
 }
 .dot{
     width: 2px;
