@@ -8,7 +8,7 @@ title: CTK's WEBSITE
 <div class="articleTitle">
     <p class="title">目录</p>
     <ul>
-        {% for post in site.posts.article %}
+        {% for post in site.posts._article %}
             <li>{{post.date | date_to_string}}&nbsp;<a href="{{post.url}}">{{post.title}}</a></li>
         {% endfor %}
     </ul>
