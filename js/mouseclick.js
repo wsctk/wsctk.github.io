@@ -1,9 +1,9 @@
 window.onload = function() {
     const body = document.querySelector("body");
     const height1 = body.scrollHeight
-    const height2 = window.pageY
+    const height2 = window.innerHeight
     const width1 = body.scrollWidth
-    const width2 = window.pageX
+    const width2 = window.innerWidth
     const height = (height1 > height2) ? height1 : height2
     const width = (width1 > width2) ? width1 : width2 
     const di = document.createElement('div');
