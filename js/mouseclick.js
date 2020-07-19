@@ -1,17 +1,23 @@
 window.onload = function() {
     const body = document.querySelector("body");
+    const winheight = window.innerHeight
+    const winwidth = window.innerWidth
+    const di = document.createElement('div');
+    di.className = "gezhaoceng";
+    di.style.innerWidth = winwidth
+    di.style.innerHeight = winheight
+    body.appendChild(di)
     window.addEventListener("click", function(event) {
-        const abc = window.innerHeight
-        console.log(abc)
         const top = event.pageY;
         const left = event.pageX;
         const d = document.createElement('div');
         d.className = "dot";
         d.style.left = left + 'px';
         d.style.top = top + 'px';
-        body.appendChild(d);
+        const ddd = document.querySelector('.gezhaoceng')
+        ddd.appendChild(d);
         setTimeout(function(){
-            body.removeChild(d);
+            ddd.removeChild(d);
         },3200)
     })
 }
