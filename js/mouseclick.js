@@ -1,7 +1,7 @@
 window.onload = function() {
     const body = document.querySelector("body");
-    const winheight = body.style.height
-    const winwidth = body.style.width
+    const winheight = body.scrollHeight
+    const winwidth = body.scrollWidth
     console.log(winheight)
     const di = document.createElement('div');
     di.className = "gezhaoceng";
