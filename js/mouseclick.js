@@ -1,11 +1,15 @@
 window.onload = function() {
     const body = document.querySelector("body");
-    const winheight = body.scrollHeight
-    const winwidth = body.scrollWidth
+    const height1 = body.scrollHeight
+    const height2 = window.pageY
+    const width1 = body.scrollWidth
+    const width2 = window.pageX
+    const height = (height1 > height2) ? height1 : height2
+    const width = (width1 > width2) ? width1 : width2 
     const di = document.createElement('div');
     di.className = "gezhaoceng";
-    di.style.width = winwidth + 'px'
-    di.style.height = winheight + 'px'
+    di.style.width = width + 'px'
+    di.style.height = height + 'px'
     body.appendChild(di)
     window.addEventListener("click", function(event) {
         const top = event.pageY;
