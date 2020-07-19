@@ -4,8 +4,9 @@ window.onload = function() {
     const winwidth = window.innerWidth
     const di = document.createElement('div');
     di.className = "gezhaoceng";
-    di.style.innerWidth = winwidth
-    di.style.innerHeight = winheight
+    di.style.width = winwidth
+    di.style.height = winheight
+    console.log(di.style.width)
     body.appendChild(di)
     window.addEventListener("click", function(event) {
         const top = event.pageY;
