@@ -8,7 +8,7 @@ window.onload = function() {
     const width = (width1 > width2) ? width1 : width2 
     const di = document.createElement('div');
     di.className = "gezhaoceng";
-    di.style.width = width + 'px'
+    di.style.width = width -17 + 'px'
     di.style.height = height + 'px'
     body.appendChild(di)
     window.addEventListener("click", function(event) {
