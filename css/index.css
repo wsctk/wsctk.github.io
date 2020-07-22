@@ -88,12 +88,10 @@ li {
 @keyframes sploosh {
     0% {
         transform: scale(1);
-     /*   background:rgba(66,166,223,0.7); */
-		background-color: #eee;
+        background:rgba(66,166,223,0.7);
     }
     100% {
         transform: scale(100);
-		background-color: #eee;
-  /*      background:rgba(66,166,223,0); */
+        background:rgba(66,166,223,0);
     }
 }
