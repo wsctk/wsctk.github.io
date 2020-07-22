@@ -82,15 +82,18 @@ li {
     border-radius: 100%;
     position: absolute;
     background:transparent;
+	border: 1px solid #fff;
     animation: sploosh 3s cubic-bezier(0.165, 0.85, 0.44, 1);
 }
 @keyframes sploosh {
     0% {
         transform: scale(1);
-        background:rgba(66,166,223,0.7);
+     /*   background:rgba(66,166,223,0.7); */
+		background-color: #eee;
     }
     100% {
         transform: scale(100);
-        background:rgba(66,166,223,0);
+		background-color: #eee;
+  /*      background:rgba(66,166,223,0); */
     }
 }
