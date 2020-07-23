@@ -87,7 +87,7 @@ li {
 @keyframes sploosh {
     0% {
         transform: scale(1);
-        background:rgba(66,166,223,0.5);
+        background:rgba(202,208,211,0.3);
     }
     100% {
         transform: scale(100);
