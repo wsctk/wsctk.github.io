@@ -15,6 +15,7 @@ body{
 }
 p {
     display:block;
+    word-wrap: break-word;
 }
 .header {
     text-align: center;
