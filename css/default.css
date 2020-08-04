@@ -13,10 +13,6 @@ body{
     min-width: 888px;
     font-family: Helvetica, Arial, KaiTi;
 }
-p {
-    display:block;
-    word-wrap: break-word;
-}
 .header {
     text-align: center;
     background-image: linear-gradient(to bottom right, #9cbdb4 , #37b9e9);
