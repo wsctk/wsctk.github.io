@@ -13,21 +13,25 @@ category: excerpt
 	<p class="textline">[attr]：选择所有带attr属性的元素</p>
 	<p class="textline">[attr=value]：选择所有attr属性值为value的元素</p>
 	<p class="textline">[attr~=value]：选择所有attr属性值中包含value的元素</p>
-	<p class="textline">[attr|=value]：选择所有attr属性值以value开头的元素</p>
-	<p class="textline">[attr]</p>
-	<p class="textline"></p>
-	<p class="textline"></p>
-	<p class="textline"></p>
-	<p class="textline"></p>
-	<p class="textline"></p>
-	<p class="textline"></p>
-	<p class="textline"></p>
-	<p class="textline"></p>
-	<p class="textline"></p>
-	<p class="textline"></p>
-	<p class="textline"></p>
-	<p class="textline"></p>
-	<p class="textline"></p>
+	<p class="textline">[attr|=value]：选择所有attr属性值以value开头的元素(后续字符要以-连接)</p>
+	<p class="textline">[attr^=value]：选择所有attr属性值以value开头的元素</p>
+	<p class="textline">[attr$=value]：选择所有attr属性值以value结尾的元素</p>
+	<p class="textline">[attr*=value]：选择所有attr属性值包含子字符串value的元素</p>
+	<p class="textline">el1~el2：选择el1元素之后的所有el2元素</p>
+	<p class="textline">:empty：选择没有子元素的目标元素</p>
+	<p class="textline">:enabled：选择所有已启用的目标元素</p>
+	<p class="textline">:disabled：选择所有已禁用的目标元素</p>
+	<p class="textline">:checked：选择所有已选中的目标元素</p>
+	<p class="textline">:not(selector)：选择每个不是selector元素的元素</p>
+	<p class="textline">::selection：匹配元素中被用户选中或处于高亮状态的部分</p>
+	<p class="textline">:out-of-range：匹配值在指定区间之外的input元素</p>
+	<p class="textline">:in-range：匹配值在指定区间内的input元素</p>
+	<p class="textline">:read-write：匹配可读及可写的元素</p>
+	<p class="textline">:read-only：匹配设置只读属性的元素</p>
+	<p class="textline">:optional：匹配可选的输入元素</p>
+	<p class="textline">:required：匹配必选的元素</p>
+	<p class="textline">:valid：匹配输入值为合法的元素</p>
+	<p class="textline">:invalid：匹配输入值为非法的元素</p>
 	
     <div class="writeByWho">Writed By CTK at {{page.date | date_to_string}}</div>
 </div>
