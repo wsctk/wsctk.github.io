@@ -1,0 +1,24 @@
+---
+layout: default
+title: H5和CSS面试问题
+category: interview
+---
+<div class="header">
+    {{page.title}}
+</div>
+<div class="content">
+    <P class="firstTitle">前端H5和Css3常见面试题</p>
+    <P class="secondTitle"></P>
+    <p class="textline"></p>
+	
+	<P class="secondTitle">css实现自动水平垂直居中</P>
+	<p class="textline">1.父元素display：flex;然后align-items：center;justify-contetn：center;</p>
+	<p class="textline">2.position：absolute;分两种：1.left：50%;height：50%;之后用margin-left或者transform要居中元素宽高一半的负值；2.left：0;right：0;top：0;bottom：0;形成自适应流元素，设定宽高之后margin：auto;</p>
+	<p class="textline">3.父元素display：table;子元素display：table-cell;text-align：center;verti-align：middle;孙子元素display：inline-block;</p>
+	<P class="secondTitle">meta标签</P>
+	<p class="textline">提供了HTML的元数据，不会显示在客户端，但是会被浏览器解析。meta元素通常用于指定网页的描述，关键词，文件的最后修改时间，作者以及其他元数据。</p>
+	<P class="secondTitle"></P>
+	<p class="textline"></p>
+	
+    <div class="writeByWho">Writed By CTK at {{page.date | date_to_string}}</div>
+</div>
