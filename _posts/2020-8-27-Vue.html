@@ -1,0 +1,26 @@
+---
+layout: default
+title: Vue面试问题
+category: interview
+---
+<div class="header">
+    {{page.title}}
+</div>
+<div class="content">
+    <P class="firstTitle">前端Vue常见面试题</p>
+    <P class="secondTitle">响应式原理</P>
+    <p class="textline">当你把一个普通的 JavaScript 对象传入 Vue 实例作为 data 选项，Vue 将遍历此对象所有的 property，并使用 Object.defineProperty 把这些 property 全部转为 getter/setter。Object.defineProperty 是 ES5 中一个无法 shim 的特性，这也就是 Vue 不支持 IE8 以及更低版本浏览器的原因</p>
+	<p class="textline">Vue在更新DOM时是异步执行的。只要侦听到数据变化，Vue将开启一个队列，并缓冲在同一事件循环中发生的所有数据变更。如果同一个watcher被多次触发，只会被推入到队列中一次。这种在缓冲时去除重复数据对于避免不必要的计算和DOM操作是非常重要的。然后，在下一个的事件循环“tick”中，Vue刷新队列并执行实际(已去重的)工作。Vue在内部对异步队列尝试使用原生的Promise.then、MutationObserver和setImmediate，如果执行环境不支持，则会采用setTimeout(fn, 0)代替。</p>
+	<p class="textline">虽然Vue.js通常鼓励开发人员使用“数据驱动”的方式思考，避免直接接触DOM，但是有时我们必须要这么做。为了在数据变化之后等待Vue完成更新DOM，可以在数据变化之后立即使用Vue.nextTick(callback)。这样回调函数将在DOM更新完成后被调用</p>
+	<P class="secondTitle">父子组件间通信方式</P>
+	<p class="textline">props：父向子传值</p>
+	<p class="textline">$emit：子向父传值</p>
+	<p class="textline">provide和inject：祖先向子孙传值</p>
+	<p class="textline">$parent和$children：利用$children可以直接获取子组件的实例，利用$parent则可以直接获取到父组件的实例</p>
+	<p class="textline">VueX</p>
+	<p class="textline">Bus总线：中央事件总线的方式。新建一个Vue事件bus对象，然后通过bus.$emit触发事件，bus.$on监听触发的事件。</p>
+	<P class="secondTitle">路由懒加载</P>
+	<p class="textline">像vue这种单页面应用，如果没有应用懒加载，运用webpack打包后的文件将会异常的大，造成进入首页时，需要加载的内容过多，时间过长，会出现长时间的白屏，即使做了loading也是不利于用户体验，而运用懒加载则可以将页面进行划分，需要的时候才加载页面，可以有效的分担首页所承担的加载压力，减少首页加载用时</p>
+
+    <div class="writeByWho">Writed By CTK at {{page.date | date_to_string}}</div>
+</div>
