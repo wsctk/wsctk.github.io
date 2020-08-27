@@ -1,0 +1,88 @@
+---
+layout: default
+title: JS面试问题
+category: interview
+---
+<div class="header">
+    {{page.title}}
+</div>
+<div class="content">
+    <P class="firstTitle">前端JS常见面试题</p>
+    <P class="secondTitle">null和undefine的区别</P>
+    <p class="textline">null表示没有对象，即此处不应该有值</p>
+	<p class="textline">undefine表示声明了但未赋值，即此处应该有值，但没有定义</p>
+	<P class="secondTitle">JS如何进行继承</P>
+	<p class="textline">原型链、构造函数、组合式、原型式、寄生式、组合寄生式</p>
+	<P class="secondTitle">new操作符做了哪些事</P>
+	<p class="textline">创建一个空对象，设置原型链，让实例的this指向obj，并执行Func的函数体，判断实例的返回值类型</p>
+	<P class="secondTitle">闭包</P>
+	<p class="textline">指能够从内部函数访问外部函数作用域，可以理解为定义在函数内部的函数。</p>
+	<p class="textline">优点：逻辑连续、方便调用上下文的局部变量，加强封装性。</p>
+	<p class="textline">缺点：容易造成内存浪费。</p>
+	<P class="secondTitle">JS的垃圾回收机制</P>
+	<p class="textline">标记清除、引用计数</p>
+	<P class="secondTitle">cookie的利弊以及和web storage的区别</P>
+	<p class="textline">cookie优点：不需要任何服务器资源，数据简单，基于文档的轻量结构，可配置生命周期。</p>
+	<p class="textline">cookie缺点：数量和长度都有限制，有安全风险，可能被用户禁用，有些状态不可能保存在客户端。</p>
+	<p class="textline">区别：存储空间不同；能否与服务器交互；API接口设置不同；能否跨域（cookie不能跨域）。</p>
+	<P class="secondTitle">bind()、apply()和call()的异同</P>
+	<p class="textline">同：改变当前作用域中的this指向</p>
+	<p class="textline">异：bind()用于方法，其他的用于函数，apply()和call()第一个参数都是新的this指向，而且可以传更多参数，apply()只需要传入一个所需参数的数组 ，call()则需要一个一个的传入。</p>
+	<P class="secondTitle">关于Ajax以及Ajax的请求过程</P>
+	<p class="textline">Ajax是js、xml、css、dom等多种技术的组合应用，用来实现客户端的异步操作，在不刷新页面的情况下和服务器进行通信，支持更新部分页面而不重载页面，减少用户的等待时间。</p>
+	<p class="textline">创建XMLHttpRequest对象、创建一个新的HTTP请求，并指定请求方式，URL以及验证信息、设置响应HTTP请求状态变化的函数、发送请求、获取异步调用返回的数据、实现页面刷新。</p>
+	<P class="secondTitle">JSON</P>
+	<p class="textline">一种轻量级的数据交换格式，易于阅读和书写，采用完全独立于程序语言的文本格式，也使用了类C语言的习惯，使得JSON成为理想的数据交换语言。</p>
+	<P class="secondTitle">深浅拷贝</P>
+	<p class="textline">1.递归直接复制引用对象的键值对</p>
+	<p class="textline">2.使用JSON对象的stringify和parse方法</p>
+	<P class="secondTitle">怎么判断一个对象是否是空的</P>
+	<p class="textline">1.使用JSON.stringify将对象转为JSON字符串，再和'{}'比较</p>
+	<p class="textline">2.使用Object.getOwnPropertyNames(),判断返回的数组长度是否为0</p>
+	<p class="textline">3.使用Object.keys()或Object.values()，判断返回的数组长度是否为0</p>
+	<P class="secondTitle">如何实现前端路由</P>
+	<p class="textline">要实现前端路由，需要解决两个核心问题：1.如何改变URL却不引起页面刷新；2.如何检测URL变化了</p>
+	<p class="textline">hash实现：hash是URL中hash以及后面的部分，改变URL中的hash部分不会引起页面刷新；通过hashchange()事件监听URL的变化，改变URL的方式只有这几种：通过浏览器前进后退改变URL、通过a标签改变URL、通过window.location改变URL，这几种情况改变URL都会触发hashchange事件</p>
+	<p class="textline">history实现：history提供了pushState和replaceState两个方法，这两个方法改变URL的path部分不会引起页面刷新；history提供类似hashchange的popstate事件，通过浏览器前进后退改变URL时会触发popstate事件，但是通过pushState/replaceState或a标签改变URL不会触发popstate事件，	我们可以通过拦截pushState/replaceState的调用和a标签的点击事件来检测URL变化。</p>
+	<P class="secondTitle">类的实现和继承原理</P>
+	<p class="textline">类的实现：调用_classCallCheck方法判断当前函数调用前是否有new关键字；将class内部的变量和函数赋给this；执行constuctor内部的逻辑；return this。</p>
+	<p class="textline">继承的实现：调用_inherits函数继承父类的proptype；用一个闭包保存父类引用，在闭包内部做子类构造逻辑；new检查；用当前this调用父类构造函数；将子类class内部的变量和函数赋给this；执行子类constuctor内部的逻辑</p>
+	<P class="secondTitle">函数节流和函数防抖</P>
+	<p class="textline">函数节流的要点是：声明一个变量当标志位，记录当前代码是否在执行，如果空闲，则可以正常触发方法执行，如果代码在执行中，则取消这次执行，直接return。函数节流不是避免执行方法，而是调用方法后会进行一次判断，满足条件才能执行，通常会给真正的方法体设置定时器，让其在固定事件内只执行一次。</p>
+	<p class="textline">函数防抖的要点是：延迟执行需要跑的代码，如果方法多次触发，则不断的清除定时器，重新开始计时，如果计时完毕，期间没有触发方法，则正常执行代码。</p>
+	<P class="secondTitle">对模块化的理解</P>
+	<p class="textline">封装细节，提供使用接口，彼此之间互不影响，每个模块都实现某一特定的功能。好处是可以避免变量污染，命名冲突，提高代码复用性，更好维护和管理。</p>
+	<P class="secondTitle">哪些操作会引起内存泄漏</P>
+	<p class="textline">意外的全局变量；闭包；没有清理的DOM元素引用；被遗忘的定时器或回调；子元素存在引用。</p>
+	<P class="secondTitle">如何看待webpack</P>
+	<p class="textline">WebPack 是一个模块打包工具，可以使用WebPack管理模块依赖，并编绎输出模块们所需的静态文件。它能够很好地管理、打包Web开发中所用到的HTML、Js、CSS以及各种静态文件，让开发过程更加高效。对于不同类型的资源，webpack有对应的模块加载器。webpack模块打包器会分析模块间的依赖关系，最后生成优化且合并后的静态资源。</p>
+	<P class="secondTitle">定义对象的方法</P>
+	<p class="textline">直接创建；实例化构造函数；Object.create()</p>
+	<P class="secondTitle">对promise的理解</P>
+	<p class="textline">ES6将promise写进了语言标准，原生提供了promise对象，ES6规定，pormise对象是一个构造函数，用来生成promise实例。promise是用来解决异步处理回调金字塔问题的。</p>
+	<p class="textline">特点：promise对象的状态只跟异步操作的结果有关，不受外界影响；promise的状态一旦改变，就不会再变，是不可逆的</p>
+	<p class="textline">缺点：无法取消，一旦创建就会立即执行；如果不设置回调函数，promise内部抛出的错误，不会反映到外部；当处于pending状态的时候，无法得知目前进展到了哪个阶段，是刚刚开始还是即将完成。</p>
+	<P class="secondTitle">对AMD、CMD和CommonJs的理解</P>
+	<p class="textline">AMD/CMD/CommonJs是JS模块化开发的标准，目前对应的实现是RequireJs/SeaJs/nodeJs</p>
+	<p class="textline">CommonJs主要针对服务端，AMD/CMD主要针对浏览器端</p>
+	<p class="textline">AMD是预加载，在并行加载js文件同时，还会解析执行该模块；CMD是懒加载，并行加载js文件，在需要的时候才会执行</p>
+	<p class="textline">AMD优缺点：加载速度快，但是JS文件执行的顺序不可控</p>
+	<p class="textline">CMD优缺点：JS文件执行顺序可控，但是由于是同步执行，执行时间会叠加</p>
+	<P class="secondTitle">web开发中的会话跟踪</P>
+	<p class="textline">cookie；session；隐藏表单域；URL重写；IP地址</p>
+	<P class="secondTitle">关于eval()</P>
+	<p class="textline">功能：把字符串解析成js代码执行并返回结果</p>
+	<p class="textline">作用域：会把当前eval的作用域赋值过去</p>
+	<p class="textline">注意：应该避免使用eval，不安全，耗性能</p>
+	<p class="textline">应用：可以把json字符串转为json对象</p>
+	<P class="secondTitle">Js延迟加载</P>
+	<p class="textline">defer；async；动态创建脚本；定时器延迟执行方法；把脚本放到底部</p>
+	<P class="secondTitle">渐进增强和优雅降级</P>
+	<p class="textline">渐进增强：针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验</p>
+	<p class="textline">优雅降级：一开始就构建完整的功能，然后再针对低版本浏览器进行兼容</p>
+	<p class="textline">区别：优雅降级是从复杂的现状开始，并试图减少用户体验的供给，而渐进增强则是从一个非常基础的、能够起作用的版本开始，并不断扩充，以适应未来环境的需要</p>
+	<P class="secondTitle">attribute和property的区别</P>
+	<p class="textline">property是DOM中的属性，是JavaScript里的对象；attribute是HTML标签上的特性，它的值只能是字符串。某种意义上property包含了attribute。</p>
+	
+    <div class="writeByWho">Writed By CTK at {{page.date | date_to_string}}</div>
+</div>
