@@ -44,6 +44,15 @@ category: interview
 	<p class="textline">解决办法：使用link标签引入样式表</p>
 	<P class="secondTitle">为什么要初始化css样式</P>
 	<p class="textline">不同的浏览器对有些标签的默认值是不同的，初始化CSS能避免因为浏览器的不同使得页面显示差异，而且也有助于之后页面排版和书写</p>
-	
+	<p class='secondTitle'>媒体查询</p>
+	<p class='textline'>使用 @media 查询，你可以针对不同的媒体类型定义不同的样式。@media 可以针对不同的屏幕尺寸设置不同的样式，特别是如果你需要设置设计响应式的页面，@media 是非常有用的。当你重置浏览器大小的过程中，页面也会根据浏览器的宽度和高度重新渲染页面。</p>
+	<p class='textline'>css语法：
+	<code>
+		@media mediatype and|not|only (media feature) {
+			CSS-Code;
+		}
+		<link rel="stylesheet" media="mediatype and|not|only (media feature)" href="mystylesheet.css">
+	</code>
+	</p>
     <div class="writeByWho">Writed By CTK at {{page.date | date_to_string}}</div>
 </div>
