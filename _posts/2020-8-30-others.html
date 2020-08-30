@@ -10,11 +10,21 @@ category: interview
     <P class="firstTitle">前端其他常见面试题</p>
     <P class="secondTitle">对浏览器内核的理解</P>
     <p class="textline">浏览器最重要或者说核心的部分是“Rendering Engine”，可大概译为“渲染引擎”，不过我们一般习惯将之称为“浏览器内核”。负责对网页语法的解释并渲染网页。所以，通常所谓的浏览器内核也就是浏览器所采用的渲染引擎，渲染引擎决定了浏览器如何显示网页的内容以及页面的格式信息。不同的浏览器内核对网页编写语法的解释也有不同，因此同一网页在不同的内核的浏览器里的渲染效果也可能不同，这也是网页编写者需要在不同内核的浏览器中测试网页显示效果的原因</p>
-	<p class='firstTitle'>HTML5的离线储存怎么使用，解释工作原理</p>
+	<p class='secondTitle'>HTML5的离线储存怎么使用，解释工作原理</p>
 	<p class='textline'>原理：HTML5的离线存储是基于一个新建的.appcache文件的，通过这个文件上的解析清单离线存储资源，这些资源就会像cookie一样被存储了下来。之后当网络在处于离线状态下时，浏览器会通过被离线存储的数据进行页面展示。</p>
 	<p class='textline'>使用方法：首先，在html页面头部加入一个manifest的属性：&lt;html manifest="cache.manifest"&gt;&lt;/html&gt;;然后书写cache.manifest文件。</p>
-	<p class='firstTitle'>前端性能优化</p>
-	<p class='textline'>减少http请求，合理设置HTTP缓存：http协议是无状态的应用层协议，意味着每次http请求都需要建立通信链路、进行数据传输，而在服务器端，每个http都需要启动独立的线程去处理。这些通信和服务的开销都很昂贵，减少http请求的数目可有效提高访问性能</p>
+	<p class='secondTitle'>前端性能优化</p>
+	<p class='textline'>减少http请求，合理设置HTTP缓存：http协议是无状态的应用层协议，意味着每次http请求都需要建立通信链路、进行数据传输，而在服务器端，每个http都需要启动独立的线程去处理。这些通信和服务的开销都很昂贵，减少http请求的数目可有效提高访问性能；怎样设置缓存才算合理设置?原则很简单，能缓存越多越好，能缓存越久越好。</p>
+	<p class='textline'>使用浏览器缓存：对一个网站而言，CSS、javascript、logo、图标这些静态资源文件更新的频率都比较低，而这些文件又几乎是每次http请求都需要的，如果将这些文件缓存在浏览器中，可以极好的改善性能。通过设置http头中的cache-control和expires的属性，可设定浏览器缓存，缓存时间可以是数天，甚至是几个月。</p>
+	<p class='textline'>启用压缩：在服务器端对文件进行压缩，在浏览器端对文件解压缩，可有效减少通信传输的数据量</p>
+	<p class='textline'>CSS Sprites：合并CSS图片</p>
+	<p class='textline'>图片懒加载</p>
+	<p class='textline'>减少cookie传输</p>
+	<p class='textline'>使用CDN加速：CDN（content distribute network，内容分发网络）的本质仍然是一个缓存，而且将数据缓存在离用户最近的地方，使用户以最快速度获取数据。</p>
+	<p class='textline'>反向代理</p>
+	<p class='secondTitle'>前端SEO</p>
+	<p class='textline'>网站结构布局优化：1.控制首页链接数量；2.扁平化的目录层次，尽量不超过三层；3.导航优化；4.网站的结构布局，包括头部、主体、底部；5.控制页面的大小，减少http请求，提高网站的加载速度。</p>
+	<p class='textline'>网页代码优化：1.&lt;title&gt;标题：只强调重点即可，尽量把重要的关键词放在前面，关键词不要重复出现，尽量做到每个页面的&lt;title&gt;标题中不要设置相同的内容；2.&lt;meta keywords&gt;标签：列举出几个页面的重要关键字即可，切记过分堆砌；3.&lt;meta description&gt;标签：需要高度概括网页内容；4.&lt;body&gt;中的标签：尽量让代码语义化，在适当的位置使用适当的标签，用正确的标签做正确的事；5.&lt;a&gt;标签：要加“title”属性加以说明，链接到其他网站的外部链接，需要加上el="nofollow"属性；6.正文标题尽量使用&lt;h1&gt;标签；7.&lt;img&gt;应该使用‘alt’属性加以说明；8.利用CSS布局，将重要内容的HTML代码放在最前面；9.尽量少使用iframe框架。</p>
 
     <div class="writeByWho">Writed By CTK at {{page.date | date_to_string}}</div>
 </div>
