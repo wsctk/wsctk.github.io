@@ -9,7 +9,7 @@ html, body{
 body {
     font-size:16px;
     padding: 0 230px 0 230px;
-    background-color: #eee;
+    background-color: #d2eeeb;
     min-width: 888px;
     font-family: Helvetica, Arial, KaiTi;
 }
@@ -52,7 +52,7 @@ li {
 .articleTitle {
     font-size: 24px;
     padding: 30px 50px 30px 50px;
-    background-color: #eef;
+    background-color: #c2d3ff;
     box-shadow: 0px 0px 9px #777;
     margin-bottom: 40px;
     border-radius: 10px;
