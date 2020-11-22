@@ -1,0 +1,33 @@
+---
+layout: default
+title: Vue面试问题
+category: interview
+---
+<div class="header">
+    {{page.title}}
+</div>
+<div class="content">
+    <P class="firstTitle">前端Vue常见面试题</p>
+    <P class="secondTitle">响应式原理</P>
+    <p class="textline">当你把一个普通的JavaScript对象传入Vue实例作为data选项，Vue将遍历此对象所有的property，并使用Object.defineProperty把这些property全部转为getter/setter。Object.defineProperty是ES5中一个无法shim的特性，这也就是Vue不支持IE8以及更低版本浏览器的原因</p>
+	<p class="textline">Vue在更新DOM时是异步执行的。只要侦听到数据变化，Vue将开启一个队列，并缓冲在同一事件循环中发生的所有数据变更。如果同一个watcher被多次触发，只会被推入到队列中一次。这种在缓冲时去除重复数据对于避免不必要的计算和DOM操作是非常重要的。然后，在下一个的事件循环“tick”中，Vue刷新队列并执行实际(已去重的)工作。Vue在内部对异步队列尝试使用原生的Promise.then、MutationObserver和setImmediate，如果执行环境不支持，则会采用setTimeout(fn, 0)代替。</p>
+	<p class="textline">虽然Vue.js通常鼓励开发人员使用“数据驱动”的方式思考，避免直接接触DOM，但是有时我们必须要这么做。为了在数据变化之后等待Vue完成更新DOM，可以在数据变化之后立即使用Vue.nextTick(callback)。这样回调函数将在DOM更新完成后被调用</p>
+	<P class="secondTitle">父子组件间通信方式</P>
+	<p class="textline">props：父向子传值</p>
+	<p class="textline">$emit：子向父传值</p>
+	<p class="textline">provide和inject：祖先向子孙传值</p>
+	<p class="textline">$parent和$children：利用$children可以直接获取子组件的实例，利用$parent则可以直接获取到父组件的实例</p>
+	<p class="textline">VueX</p>
+	<p class="textline">Bus总线：中央事件总线的方式。新建一个Vue事件bus对象，然后通过bus.$emit触发事件，bus.$on监听触发的事件。</p>
+	<P class="secondTitle">路由懒加载</P>
+	<p class="textline">像vue这种单页面应用，如果没有应用懒加载，运用webpack打包后的文件将会异常的大，造成进入首页时，需要加载的内容过多，时间过长，会出现长时间的白屏，即使做了loading也是不利于用户体验，而运用懒加载则可以将页面进行划分，需要的时候才加载页面，可以有效的分担首页所承担的加载压力，减少首页加载用时</p>
+	<p class='secondTitle'>虚拟DOM</p>
+	<p class='textline'>用我们传统的开发模式，原生JS或JQ操作DOM时，浏览器会从构建DOM树开始从头到尾执行一遍流程。在一次操作中，我需要更新10个DOM节点，浏览器收到第一个DOM请求后并不知道还有9次更新操作，因此会马上执行流程，最终执行10次。例如，第一次计算完，紧接着下一个DOM更新请求，这个节点的坐标值就变了，前一次计算为无用功。计算DOM节点坐标值等都是白白浪费的性能。即使计算机硬件一直在迭代更新，操作DOM的代价仍旧是昂贵的，频繁操作还是会出现页面卡顿，影响用户体验。</p>
+	<p class='textline'>虚拟DOM就是为了解决浏览器性能问题而被设计出来的。如前，若一次操作中有10次更新DOM的动作，虚拟DOM不会立即操作DOM，而是将这10次更新的diff内容保存到本地一个JS对象中，最终将这个JS对象一次性attch到DOM树上，再进行后续操作，避免大量无谓的计算量。所以，用JS对象模拟DOM节点的好处是，页面的更新可以先全部反映在JS对象(虚拟DOM)上，操作内存中的JS对象的速度显然要更快，等更新完成后，再将最终的JS对象映射成真实的DOM，交由浏览器去绘制。</p>
+	<p class='secondTitle'>vue的SEO问题</p>
+	<p class='textline'>seo关系到网站排名, vue搭建spa做前后端分离不好做seo，可通过其他方法解决：1.SSR服务端渲染: 将同一个组件渲染为服务器端的HTML字符串，利于seo且更快；2.vue-meta-info，nuxt，prerender-spa-plugin页面预渲染等</p>
+	<p class='secondTitle'>create和mounted的区别</p>
+	<p class='textline'>created: 在模板渲染成html前调用，即通常初始化某些数据，然后再渲染成视图。mounted: 在模板渲染成html后调用，通常是初始化页面完成后，再对html的dom节点进行一些需要的操作和方法。</p>
+	
+    <div class="writeByWho">Writed By CTK at {{page.date | date_to_string}}</div>
+</div>

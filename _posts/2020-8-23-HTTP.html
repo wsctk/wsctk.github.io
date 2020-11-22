@@ -1,0 +1,40 @@
+---
+layout: default
+title: HTTP面试问题
+category: interview
+---
+<div class="header">
+    {{page.title}}
+</div>
+<div class="content">
+    <P class="firstTitle">前端HTTP常见面试题</p>
+    <P class="secondTitle">前端跨域问题</P>
+    <p class="textline">JSONP：只能实现get请求</p>
+	<p class="textline">document.domain + iframe：仅限主域相同，子域不同的跨域应用场景</p>
+	<p class="textline">location.hash + iframe：不同域之间利用iframe的location.hash传值</p>
+	<p class="textline">window.name + iframe：通过iframe的src属性由外域转向本地域，跨域数据即由iframe的window.name从外域传到本地域。</p>
+	<P class="textline">postMessage：HTML5 XMLHttpRequest Level 2中的API，是为数不多可以跨域操作的window属性之一，它可用于解决以下方面的问题：页面和其打开的新窗口的数据传递；多窗口之间消息传递
+；页面与嵌套的iframe消息传递；上面三个场景的跨域数据传递</P>
+	<p class="textline">跨域资源共享(cors)：普通跨域请求：只服务端设置Access-Control-Allow-Origin即可，前端无须设置；带cookie请求：前后端都需要设置</p>
+	<p class="textline">nginx代理跨域</p>
+	<p class="textline">Nodejs中间件代理跨域</p>
+	<p class="textline">WebSocket协议跨域</p>
+	<P class="secondTitle">HTTP请求方法</P>
+	<p class="textline">GET：请求指定的页面信息，并返回实体主体。</p>
+	<p class="textline">HEAD：类似于get请求，只不过返回的响应中没有具体的内容，用于获取报头</p>
+	<p class="textline">POST：向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST请求可能会导致新的资源的建立和/或已有资源的修改。</p>
+	<p class="textline">PUT：从客户端向服务器传送的数据取代指定的文档的内容。</p>
+	<p class="textline">DELETE：请求服务器删除指定的数据。</p>
+	<p class="textline">CONNECT：HTTP/1.1协议中预留给能够将连接改为管道方式的代理服务器。</p>
+	<p class="textline">OPTIONS：允许客户端查看服务器的性能。</p>
+	<p class="textline">TRACE：回显服务器收到的请求，主要用于测试或诊断。</p>
+	<P class="secondTitle">GET和POST的区别</P>
+	<p class="textline">POST比GET更安全，参数不会被保存在浏览器历史或web服务器中，GET发送的数据是URL的一部分，对所有人可见，而POST的数据不会显示在URL中。</p>
+	<P class="secondTitle">从输入URL到页面加载的过程</P>
+	<p class="textline">浏览器构建HTTP Request请求：1.应用层进行DNS解析；2.应用层生成HTTP请求报文；3.传输层建立TCP连接；4.网络层使用IP协议来选择路线；5.数据链路层实现网络相邻结点间可靠的数据通信；6.物理层传输数据</p>
+	<P class="textline">网络传输：从客户机到服务器需要通过许多网络设备，一般地，包括集线器、交换器、路由器等</P>
+	<p class="textline">服务器处理及反向传输</p>
+	<p class="textline">浏览器渲染：1.如果HTTP响应报文是301或302重定向，则浏览器会相应头中的location再次发送请求；2.浏览器处理HTTP响应报文中的主体内容，首先使用loader模块加载相应的资源；3.使用parse模块解析HTML、CSS、Javascript资源；4.构建Render树及RenderLayer树；5.布局和渲染；6.硬件加速。</p>
+	
+    <div class="writeByWho">Writed By CTK at {{page.date | date_to_string}}</div>
+</div>

@@ -1,1 +1,41 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>vue-test</title><link href="/css/app.fb0c6e1c.css" rel="preload" as="style"><link href="/js/app.b75e3350.js" rel="preload" as="script"><link href="/js/chunk-vendors.e8e0b2a3.js" rel="preload" as="script"><link href="/css/app.fb0c6e1c.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but vue-test doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/js/chunk-vendors.e8e0b2a3.js"></script><script src="/js/app.b75e3350.js"></script></body></html>
+---
+layout: index
+title: CTK's WEBSITE
+---
+<div class="header">
+    Welcome to my tool-use-article web!
+</div>
+<div class="articleTitle">
+    <p class="title">目录</p>
+
+    <p class="secondTitle">基本数据类型</p>
+    <ul>
+        {% for post in site.categories.basedata %}
+            <li>{{post.date | date_to_string}}&nbsp;<a href="{{post.url}}">{{post.title}}</a></li>
+        {% endfor %}
+    </ul>
+    <p class="secondTitle">静态对象</p>
+    <ul>
+        {% for post in site.categories.staticobj %}
+            <li>{{post.date | date_to_string}}&nbsp;<a href="{{post.url}}">{{post.title}}</a></li>
+        {% endfor %}
+    </ul>
+    <p class="secondTitle">摘抄</p>
+    <ul>
+        {% for post in site.categories.excerpt %}
+            <li>{{post.date | date_to_string}}&nbsp;<a href="{{post.url}}">{{post.title}}</a></li>
+        {% endfor %}
+    </ul>
+	<p class="secondTitle">面试经</p>
+	<ul>
+	    {% for post in site.categories.interview %}
+	        <li>{{post.date | date_to_string}}&nbsp;<a href="{{post.url}}">{{post.title}}</a></li>
+	    {% endfor %}
+	</ul>
+	<p class="secondTitle">随笔</p>
+	<ul>
+	    {% for post in site.categories.article %}
+	        <li>{{post.date | date_to_string}}&nbsp;<a href="{{post.url}}">{{post.title}}</a></li>
+	    {% endfor %}
+	</ul>
+</div>

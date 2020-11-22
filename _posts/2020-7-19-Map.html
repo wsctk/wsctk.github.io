@@ -1,0 +1,25 @@
+---
+layout: default
+title: Map集合
+category: basedata
+---
+<div class="header">
+    {{page.title}}
+</div>
+<div class="content">
+    <P class="firstTitle">Map集合方法</p>
+    <P class="secondTitle">操作方法</P>
+    <P class="textline">为Map对象添加或更新一个指定了键(key)和值(value)的(新)键值对：myMap.set(key, value);</P>
+    <P class="textline">返回某个Map对象中的一个指定元素：myMap.get(key);</P>
+    <p class="textline">从一个Map对象中删除指定的元素，成功删除返回true，否则返回false：myMap.delete(key);</p>
+    <p class="textline">返回一个布尔值来指示对应的键是否存在Map对象中：myMap.has(key);</p>
+    <p class="textline">用来清空一个Map对象中的所有元素：myMap.clear();</p>
+
+    <P class="secondTitle">遍历方法</P>
+    <p class="textline">返回一个包含[key,value]对的迭代器对象，其迭代顺序与Map对象的插入顺序相同：myMap.entries();</p>
+    <p class="textline">返回一个按照原Map对象中元素插入顺序返回其每个元素的key值的迭代器对象：myMap.keys();</p>
+    <p class="textline">返回一个按照原Map对象中元素插入顺序返回其每个元素的value值迭代器对象：myMap.values();</p>
+    <p class="textline">根据集合中元素的插入顺序，对Map对象中的每个键值对执行提供的回调函数：myMap.forEach(callback[, thisArg]);</p>
+
+    <div class="writeByWho">Writed By CTK at {{page.date | date_to_string}}</div>
+</div>
