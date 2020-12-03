@@ -13,6 +13,9 @@ body {
     min-width: 888px;
     font-family: Helvetica, Arial, KaiTi;
 }
+body::-webkit-scrollbar {
+    width: 0;
+}
 p {
     display:block;
 }
