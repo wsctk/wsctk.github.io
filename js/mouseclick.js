@@ -24,4 +24,7 @@ window.onload = function() {
             ddd.removeChild(d);
         },3200)
     })
+    document.oncontextmenu = function () {
+        return false
+    }
 }
